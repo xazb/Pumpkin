@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6jR-rw-OMK">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Play Song-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Play Song" id="BYZ-38-t0r" customClass="SongViewController" customModule="Pumpkin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,143 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ZOf-gm-vh8">
+                                <rect key="frame" x="20" y="28" width="567" height="692"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" misplaced="YES" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="TKT-T4-I4S">
+                                        <rect key="frame" x="4" y="0.0" width="560" height="44"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Artist Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FgY-6m-pju">
+                                        <rect key="frame" x="238" y="56" width="91" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Album Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04x-RD-AcO">
+                                        <rect key="frame" x="240" y="89" width="87" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Song Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40M-RB-HF9">
+                                        <rect key="frame" x="245" y="121" width="78" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="genericAlbumCover" translatesAutoresizingMaskIntoConstraints="NO" id="6Kx-K8-M1A">
+                                        <rect key="frame" x="0.0" y="154" width="567" height="482"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6Kx-K8-M1A" secondAttribute="height" multiplier="567:482" id="RW9-Id-Hyc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ivu-Jb-qWM">
+                                        <rect key="frame" x="209" y="648" width="150" height="2"/>
+                                    </progressView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BSG-AG-GXx">
+                                        <rect key="frame" x="236" y="662" width="96" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ta3-9U-MUY">
+                                                <rect key="frame" x="0.0" y="0.0" width="34" height="30"/>
+                                                <state key="normal" title="Back"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNY-yt-ZFv">
+                                                <rect key="frame" x="34" y="0.0" width="30" height="30"/>
+                                                <state key="normal" title="Play"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVh-QO-WTf">
+                                                <rect key="frame" x="64" y="0.0" width="32" height="30"/>
+                                                <state key="normal" title="Next"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZOf-gm-vh8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JS9-UE-zmT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZOf-gm-vh8" secondAttribute="trailing" constant="-7" id="Tl1-XN-flE"/>
+                            <constraint firstItem="ZOf-gm-vh8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rfi-8d-ZNp"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="albumCover" destination="6Kx-K8-M1A" id="7Xu-jR-ciC"/>
+                        <outlet property="albumTitle" destination="04x-RD-AcO" id="7WY-kL-XHk"/>
+                        <outlet property="artistName" destination="FgY-6m-pju" id="Ddi-Qk-I1H"/>
+                        <outlet property="backButton" destination="ta3-9U-MUY" id="PCh-Hk-Dec"/>
+                        <outlet property="nextButton" destination="pVh-QO-WTf" id="dk8-ma-ilL"/>
+                        <outlet property="playButton" destination="WNY-yt-ZFv" id="eFH-6m-rNT"/>
+                        <outlet property="searchBar" destination="TKT-T4-I4S" id="FKF-5y-q3v"/>
+                        <outlet property="songStatus" destination="Ivu-Jb-qWM" id="4wm-D0-cZp"/>
+                        <outlet property="songTitle" destination="40M-RB-HF9" id="k1e-FM-l3O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-117" y="389"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="Cj0-0q-dxJ">
+            <objects>
+                <tableViewController id="6jR-rw-OMK" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" id="H6l-Ad-pbw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SongTableViewCell" rowHeight="85" id="jzF-P2-lGR" customClass="SongTableViewCell" customModule="Pumpkin" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="600" height="85"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jzF-P2-lGR" id="GfZ-wz-rfG">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="84.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="genericAlbumCover" translatesAutoresizingMaskIntoConstraints="NO" id="4pq-Tb-iuc">
+                                            <rect key="frame" x="495" y="0.0" width="97" height="84.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="artistName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ki-Ay-PR2">
+                                            <rect key="frame" x="8" y="8" width="484" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="songName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ePn-cH-06g">
+                                            <rect key="frame" x="8" y="32" width="484" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="albumName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PvS-lb-kV9">
+                                            <rect key="frame" x="8" y="55" width="484" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="albumCover" destination="4pq-Tb-iuc" id="GSs-sI-Pl5"/>
+                                    <outlet property="albumName" destination="PvS-lb-kV9" id="9dn-3z-IR4"/>
+                                    <outlet property="artistName" destination="7Ki-Ay-PR2" id="Pxk-gd-T25"/>
+                                    <outlet property="songName" destination="ePn-cH-06g" id="E4l-yE-XYQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="6jR-rw-OMK" id="2su-vg-0dx"/>
+                            <outlet property="delegate" destination="6jR-rw-OMK" id="pgU-TW-Gak"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l4I-9g-FRf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-876" y="389"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="genericAlbumCover" width="567" height="482"/>
+    </resources>
 </document>
