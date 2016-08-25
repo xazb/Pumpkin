@@ -1,0 +1,403 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F88EA28F1D6F7F0A00787B89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88EA28E1D6F7F0A00787B89 /* AppDelegate.swift */; };
+		F88EA2911D6F7F0A00787B89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88EA2901D6F7F0A00787B89 /* ViewController.swift */; };
+		F88EA2941D6F7F0A00787B89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88EA2921D6F7F0A00787B89 /* Main.storyboard */; };
+		F88EA2961D6F7F0A00787B89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88EA2951D6F7F0A00787B89 /* Assets.xcassets */; };
+		F88EA2991D6F7F0A00787B89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88EA2971D6F7F0A00787B89 /* LaunchScreen.storyboard */; };
+		F88EA2A41D6F7F0A00787B89 /* PumpkinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88EA2A31D6F7F0A00787B89 /* PumpkinTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F88EA2A01D6F7F0A00787B89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F88EA2831D6F7F0A00787B89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F88EA28A1D6F7F0A00787B89;
+			remoteInfo = Pumpkin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F88EA28B1D6F7F0A00787B89 /* Pumpkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pumpkin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F88EA28E1D6F7F0A00787B89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F88EA2901D6F7F0A00787B89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F88EA2931D6F7F0A00787B89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F88EA2951D6F7F0A00787B89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F88EA2981D6F7F0A00787B89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F88EA29A1D6F7F0A00787B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F88EA29F1D6F7F0A00787B89 /* PumpkinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PumpkinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F88EA2A31D6F7F0A00787B89 /* PumpkinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PumpkinTests.swift; sourceTree = "<group>"; };
+		F88EA2A51D6F7F0A00787B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F88EA2881D6F7F0A00787B89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88EA29C1D6F7F0A00787B89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F88EA2821D6F7F0A00787B89 = {
+			isa = PBXGroup;
+			children = (
+				F88EA28D1D6F7F0A00787B89 /* Pumpkin */,
+				F88EA2A21D6F7F0A00787B89 /* PumpkinTests */,
+				F88EA28C1D6F7F0A00787B89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F88EA28C1D6F7F0A00787B89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F88EA28B1D6F7F0A00787B89 /* Pumpkin.app */,
+				F88EA29F1D6F7F0A00787B89 /* PumpkinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F88EA28D1D6F7F0A00787B89 /* Pumpkin */ = {
+			isa = PBXGroup;
+			children = (
+				F88EA28E1D6F7F0A00787B89 /* AppDelegate.swift */,
+				F88EA2901D6F7F0A00787B89 /* ViewController.swift */,
+				F88EA2921D6F7F0A00787B89 /* Main.storyboard */,
+				F88EA2951D6F7F0A00787B89 /* Assets.xcassets */,
+				F88EA2971D6F7F0A00787B89 /* LaunchScreen.storyboard */,
+				F88EA29A1D6F7F0A00787B89 /* Info.plist */,
+			);
+			path = Pumpkin;
+			sourceTree = "<group>";
+		};
+		F88EA2A21D6F7F0A00787B89 /* PumpkinTests */ = {
+			isa = PBXGroup;
+			children = (
+				F88EA2A31D6F7F0A00787B89 /* PumpkinTests.swift */,
+				F88EA2A51D6F7F0A00787B89 /* Info.plist */,
+			);
+			path = PumpkinTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F88EA28A1D6F7F0A00787B89 /* Pumpkin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F88EA2A81D6F7F0A00787B89 /* Build configuration list for PBXNativeTarget "Pumpkin" */;
+			buildPhases = (
+				F88EA2871D6F7F0A00787B89 /* Sources */,
+				F88EA2881D6F7F0A00787B89 /* Frameworks */,
+				F88EA2891D6F7F0A00787B89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pumpkin;
+			productName = Pumpkin;
+			productReference = F88EA28B1D6F7F0A00787B89 /* Pumpkin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F88EA29E1D6F7F0A00787B89 /* PumpkinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F88EA2AB1D6F7F0A00787B89 /* Build configuration list for PBXNativeTarget "PumpkinTests" */;
+			buildPhases = (
+				F88EA29B1D6F7F0A00787B89 /* Sources */,
+				F88EA29C1D6F7F0A00787B89 /* Frameworks */,
+				F88EA29D1D6F7F0A00787B89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F88EA2A11D6F7F0A00787B89 /* PBXTargetDependency */,
+			);
+			name = PumpkinTests;
+			productName = PumpkinTests;
+			productReference = F88EA29F1D6F7F0A00787B89 /* PumpkinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F88EA2831D6F7F0A00787B89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "sebanski wrigley";
+				TargetAttributes = {
+					F88EA28A1D6F7F0A00787B89 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					F88EA29E1D6F7F0A00787B89 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = F88EA28A1D6F7F0A00787B89;
+					};
+				};
+			};
+			buildConfigurationList = F88EA2861D6F7F0A00787B89 /* Build configuration list for PBXProject "Pumpkin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F88EA2821D6F7F0A00787B89;
+			productRefGroup = F88EA28C1D6F7F0A00787B89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F88EA28A1D6F7F0A00787B89 /* Pumpkin */,
+				F88EA29E1D6F7F0A00787B89 /* PumpkinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F88EA2891D6F7F0A00787B89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88EA2991D6F7F0A00787B89 /* LaunchScreen.storyboard in Resources */,
+				F88EA2961D6F7F0A00787B89 /* Assets.xcassets in Resources */,
+				F88EA2941D6F7F0A00787B89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88EA29D1D6F7F0A00787B89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F88EA2871D6F7F0A00787B89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88EA2911D6F7F0A00787B89 /* ViewController.swift in Sources */,
+				F88EA28F1D6F7F0A00787B89 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F88EA29B1D6F7F0A00787B89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F88EA2A41D6F7F0A00787B89 /* PumpkinTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F88EA2A11D6F7F0A00787B89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F88EA28A1D6F7F0A00787B89 /* Pumpkin */;
+			targetProxy = F88EA2A01D6F7F0A00787B89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F88EA2921D6F7F0A00787B89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F88EA2931D6F7F0A00787B89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F88EA2971D6F7F0A00787B89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F88EA2981D6F7F0A00787B89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F88EA2A61D6F7F0A00787B89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F88EA2A71D6F7F0A00787B89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F88EA2A91D6F7F0A00787B89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pumpkin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hashu.Pumpkin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F88EA2AA1D6F7F0A00787B89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Pumpkin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hashu.Pumpkin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F88EA2AC1D6F7F0A00787B89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PumpkinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hashu.PumpkinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pumpkin.app/Pumpkin";
+			};
+			name = Debug;
+		};
+		F88EA2AD1D6F7F0A00787B89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PumpkinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hashu.PumpkinTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pumpkin.app/Pumpkin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F88EA2861D6F7F0A00787B89 /* Build configuration list for PBXProject "Pumpkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F88EA2A61D6F7F0A00787B89 /* Debug */,
+				F88EA2A71D6F7F0A00787B89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F88EA2A81D6F7F0A00787B89 /* Build configuration list for PBXNativeTarget "Pumpkin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F88EA2A91D6F7F0A00787B89 /* Debug */,
+				F88EA2AA1D6F7F0A00787B89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F88EA2AB1D6F7F0A00787B89 /* Build configuration list for PBXNativeTarget "PumpkinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F88EA2AC1D6F7F0A00787B89 /* Debug */,
+				F88EA2AD1D6F7F0A00787B89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F88EA2831D6F7F0A00787B89 /* Project object */;
+}
